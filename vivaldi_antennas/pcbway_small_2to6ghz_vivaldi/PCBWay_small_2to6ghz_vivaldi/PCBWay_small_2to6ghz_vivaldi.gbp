@@ -1,0 +1,30 @@
+G04 Filename: PCBWay_small_2to6ghz_vivaldi.gbp*
+G04 FileFunction: Paste,Bot*
+G04 Part: Single*
+G04 ProjectId: PCBWay_small_2to6ghz_vivaldi,974C31CABA66D5DCD8AF70DA5F3A9620,1*
+G04 GenerationSoftware: MathWorks,MATLAB,9.8.0.1417392 (R2020a) Update 4*
+G04 CreationDate: 2021-07-15T12:59:42-0700*
+G04 FilePolarity: Positive*
+%FSLAX16Y16*%
+%MOIN*%
+G04 Add SMAEdge connector*
+%LPD*%
+G36*
+G01*
+X-1759252Y-0574754D02*
+X-1618701D01*
+Y-0529577D01*
+X-1759252D01*
+Y-0574754D01*
+D02*
+G37*
+G36*
+Y-0797195D02*
+X-1618701D01*
+Y-0752018D01*
+X-1759252D01*
+Y-0797195D01*
+D02*
+G37*
+G04 MD5: 5f7bda8916cdcaa3e1334ea4fd1b73*
+M02*

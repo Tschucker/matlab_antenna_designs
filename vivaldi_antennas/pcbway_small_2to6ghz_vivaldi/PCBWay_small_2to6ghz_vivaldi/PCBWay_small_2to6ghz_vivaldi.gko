@@ -1,0 +1,20 @@
+G04 Filename: PCBWay_small_2to6ghz_vivaldi.gko*
+G04 FileFunction: Profile,NP*
+G04 Part: Single*
+G04 ProjectId: PCBWay_small_2to6ghz_vivaldi,974C31CABA66D5DCD8AF70DA5F3A9620,1*
+G04 GenerationSoftware: MathWorks,MATLAB,9.8.0.1417392 (R2020a) Update 4*
+G04 CreationDate: 2021-07-15T12:59:43-0700*
+%FSLAX16Y16*%
+%MOIN*%
+%ADD14C,0.001*%  G04 For board profile*
+G04 Board profile*
+D14*
+%LPD*%
+G01*
+X-1771654Y-1574803D02*
+X1771654D01*
+Y1574803D01*
+X-1771654D01*
+Y-1574803D01*
+G04 MD5: f75bb35da0268536e3ad9a4e5c1a8915*
+M02*

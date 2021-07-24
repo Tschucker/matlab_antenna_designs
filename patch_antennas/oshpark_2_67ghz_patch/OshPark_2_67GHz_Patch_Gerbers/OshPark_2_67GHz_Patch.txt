@@ -1,0 +1,12 @@
+%
+M48
+; Filename: OshPark_2_67GHz_Patch.txt
+; Description: Vias,PTH,1,2
+M72
+T01C0.011811
+%
+T01
+X008354Y-001112
+X008354Y001112
+T00
+M30

@@ -1,5 +1,6 @@
-%% Basic 2.67GHz patch design
+%% OshPark 2.67GHz patch design
 % Tom Schucker
+clear;
 
 %% Physical constant
 c  = physconst('lightspeed');
@@ -10,7 +11,7 @@ c  = physconst('lightspeed');
 fc = 2670e6; 
 
 %dialectric constant
-er = 4.2;
+er = 4.35;
 
 %Hight of the substrait
 h = 1.524e-3; %m 1.524mm
@@ -29,7 +30,7 @@ L = .02560;
 W = .03;%L; %m
 
 %Length of ground plane
-Lg = .045; %2*L;
+Lg = .05; %2*L;
 
 %Width of ground plane
 Wg = .04; %2*W;
@@ -55,9 +56,12 @@ basicPatch.Name = 'Spectrum Buddy Basic Patch';
 basicPatch.BoardThickness = h;
 basicPatch.BoardShape = groundplane;
 basicPatch.Layers = {build_patch,substrait_material,groundplane};
-basicPatch.FeedLocations = [Lg/2 0 1];
+basicPatch.FeedLocations = [Lg/2 0 1 3];
+basicPatch.FeedDiameter = mw50/2;
 figure
 show(basicPatch)
+figure;
+mesh(basicPatch, 'MaxEdgeLength',2.5e-3,'MinEdgeLength',0.8e-3);
 
 %% Plot the radiation pattern of the basic patch antenna.
 figure
@@ -76,20 +80,26 @@ S = sparameters(basicPatch, freqs);
 figure; 
 rfplot(S);
 
+%% Parallel Computation
+%plot return loss
+% RLparfor = zeros(size(freqs));
+% parfor m = 1:100
+%     RLparfor(m) = returnLoss(basicPatch, freqs(m));
+% end
+% figure;
+% plot(freqs, RLparfor);
+
 %% PCB GERBER generation
 %connector
 connector = PCBConnectors.SMAEdge;
 connector.SignalLineWidth = mw50;
 connector.EdgeLocation = 'east';
-connector.ExtendBoardProfile = true;
+connector.ExtendBoardProfile = false;
 
 %pcb service
 service = PCBServices.OSHParkWriter;
-service.Filename = 'Basic_2.67GHz_Patch.zip';
+service.Filename = 'OshPark_2.67GHz_Patch.zip';
 
 %write gerber
 PW = PCBWriter(basicPatch,service,connector);
-PW.ComponentNameFontSize = 4;
-PW.DesignInfoFontSize = 4;
 gerberWrite(PW);
-

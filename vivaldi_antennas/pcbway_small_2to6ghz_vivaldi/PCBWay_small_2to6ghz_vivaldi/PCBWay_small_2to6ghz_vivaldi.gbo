@@ -1,0 +1,18 @@
+G04 Filename: PCBWay_small_2to6ghz_vivaldi.gbo*
+G04 FileFunction: Legend,Bot*
+G04 Part: Single*
+G04 ProjectId: PCBWay_small_2to6ghz_vivaldi,974C31CABA66D5DCD8AF70DA5F3A9620,1*
+G04 GenerationSoftware: MathWorks,MATLAB,9.8.0.1417392 (R2020a) Update 4*
+G04 CreationDate: 2021-07-15T12:59:43-0700*
+%FSLAX16Y16*%
+%MOIN*%
+%ADD13C,0.008*%  G04 For silkscreen component boundaries - ground side*
+D13*
+%LPD*%
+G01*
+X-1767654Y-0815024D02*
+X-1592457D01*
+Y-0511748D01*
+X-1767654D01*
+G04 MD5: 805bc8eed526d778cf3246f540b91ad*
+M02*

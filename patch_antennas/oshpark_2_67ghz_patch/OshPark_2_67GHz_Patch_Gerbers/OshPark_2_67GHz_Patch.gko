@@ -1,0 +1,20 @@
+G04 Filename: OshPark_2_67GHz_Patch.gko*
+G04 FileFunction: Profile,NP*
+G04 Part: Single*
+G04 ProjectId: OshPark_2_67GHz_Patch,2CD5A48D9547658B661045AFE73CCBB1,1*
+G04 GenerationSoftware: MathWorks,MATLAB,9.8.0.1417392 (R2020a) Update 4*
+G04 CreationDate: 2021-07-15T12:24:57-0700*
+%FSLAX16Y16*%
+%MOIN*%
+%ADD14C,0.001*%  G04 For board profile*
+G04 Board profile*
+D14*
+%LPD*%
+G01*
+X-0984252Y-0787402D02*
+X0984252D01*
+Y0787402D01*
+X-0984252D01*
+Y-0787402D01*
+G04 MD5: b87fc95b099a75fdac08b096f6379f*
+M02*

@@ -1,0 +1,12 @@
+%
+M48
+; Filename: PCBWay_small_2to6ghz_vivaldi.txt
+; Description: Vias,PTH,1,2
+M72
+T01C0.011811
+%
+T01
+X-016228Y-007746
+X-016228Y-005522
+T00
+M30

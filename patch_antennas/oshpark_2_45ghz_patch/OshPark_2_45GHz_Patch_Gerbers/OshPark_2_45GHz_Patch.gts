@@ -1,0 +1,29 @@
+G04 Filename: OshPark_2_45GHz_Patch.gts*
+G04 FileFunction: Soldermask,Top*
+G04 Part: Single*
+G04 ProjectId: OshPark_2_45GHz_Patch,C6A1E24C7C640A67905CB22106AB81A2,1*
+G04 GenerationSoftware: MathWorks,MATLAB,9.8.0.1417392 (R2020a) Update 4*
+G04 CreationDate: 2021-07-15T12:16:05-0700*
+G04 FilePolarity: Positive*
+%FSLAX16Y16*%
+%MOIN*%
+G04 Clear soldermask for edge connector*
+G36*
+G01*
+X0818898Y-0137795D02*
+X0984252D01*
+Y0137795D01*
+X0818898D01*
+Y-0137795D01*
+D02*
+G37*
+G36*
+X-0984252Y-1070866D02*
+X0984252D01*
+Y-0787402D01*
+X-0984252D01*
+Y-1070866D01*
+D02*
+G37*
+G04 MD5: c3b9ce27339e3dda5a3cf5a97c9672c*
+M02*
